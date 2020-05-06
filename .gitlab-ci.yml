@@ -5,9 +5,6 @@ variables:
     IMAGE_TAG: $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME/rtl-sdr:1.0
    
 build-docker-image:
-    only:
-        changes:
-            - Dockerfile
     stage: release
     image: docker:latest
     services:
